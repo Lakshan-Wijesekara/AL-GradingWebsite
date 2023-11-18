@@ -9,8 +9,15 @@
 </head>
 <body>
     <h1 id="heading1">This is a Grading Website <br> Please Enter Your Result at the Text Box Below </h1>
-    <div class="textbox">
-        Please input your results here!<input style="font-size: 25px;" type="number">
+    <div class="form-container">
+        
+        Please input your results here!
+        <input class="txt-grade" type="text" id="grade" name="grade">
+        <button class="btn-check" type="button" onclick="checkGrades()">Check</button>
+        <div class="result-container">
+            <h1 id="result"></h1>
+        </div>
     </div>   
+    
 </body>
 </html>
