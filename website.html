@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="grades_of_local_ALs.js"></script>
+    <script defer src="grades_of_local_ALs.js"></script>
     <title>AL Grading Website</title>
 </head>
 <body>
@@ -13,10 +13,11 @@
         
         Please input your results here!
         <input class="txt-grade" type="text" id="grade" name="grade">
-        <button class="btn-check" type="button" onclick="checkGrades()">Check</button>
-        <div class="result-container">
+               <button class="btn-check" type="button" onclick="checkGrades()">Check</button>
+                <div class="result-container">
             <h1 id="result"></h1>
         </div>
+        <div id="error" class="error"></div>
     </div>   
     
 </body>
